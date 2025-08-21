@@ -1,0 +1,25 @@
+{
+  "name": "Python Dev",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "mounts": [
+  "source=/home/keita_masui/.ssh/id_rsa,target=/root/.ssh/id_rsa,type=bind",
+  "source=/home/keita_masui/.ssh/id_rsa.pub,target=/root/.ssh/id_rsa.pub,type=bind",
+  "source=/home/keita_masui/.ssh/known_hosts,target=/root/.ssh/known_hosts,type=bind"
+]
+
+  ,
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+      },
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-toolsai.jupyter"
+      ]
+    }
+  }
+}
