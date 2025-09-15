@@ -1,4 +1,5 @@
-import pandas as pd
+import sys
+import datetime
 
-print("👋 Hello from inside the container!")
-print("Pandas version:", pd.__version__)
+now = datetime.datetime.now()
+print(f"This Python Version is {sys.version}\r\nIt is {now}.")
